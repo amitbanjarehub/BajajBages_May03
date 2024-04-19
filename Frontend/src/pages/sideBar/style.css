@@ -1,0 +1,26 @@
+.sidebar {
+  width: 180px; /* Adjust the width as needed */
+  height: calc(100% - 115px); /* Adjust total height based on header and footer */
+  position: fixed;
+  top: 35px; /* Header height */
+  left: 0;
+  bottom: 100px; /* Footer height */
+  background-color: #F0F8FF; /* Sidebar background color */
+  color: rgb(8, 8, 8); /* Sidebar text color */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar .corner-text {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 22px;
+
+}

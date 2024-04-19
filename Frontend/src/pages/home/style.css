@@ -1,0 +1,9 @@
+.h1 {
+  text-align: center;
+}
+
+.login_button {
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  right: 60px; /* Adjust as needed */
+}
