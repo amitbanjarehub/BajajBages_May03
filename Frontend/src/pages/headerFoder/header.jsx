@@ -31,6 +31,9 @@
 import React from "react";
 
 const Header = ({ toggleSidebar }) => {
+  const logOut = () => {
+    location.replace("/");
+  };
   return (
     <header
       style={{
@@ -48,30 +51,32 @@ const Header = ({ toggleSidebar }) => {
         alignItems: "center",
       }}
     >
-      
-        <svg
-         
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            width: "24px",
-            height: "24px",
-            stroke: "currentColor",
-            strokeWidth: "2px",
-            color: "white",
-            marginLeft: "10px"
-          }}
-          onClick={toggleSidebar}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-     
+      <svg
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          width: "24px",
+          height: "24px",
+          stroke: "currentColor",
+          strokeWidth: "2px",
+          color: "white",
+          marginLeft: "10px",
+        }}
+        onClick={toggleSidebar}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+
+      <div>
+        <button onClick={logOut} style={{marginRight: "10px", borderRadius: "10px", width: "100px", height: "30px", backgroundColor: "red", color: "white"}}>logout</button>
+        
+      </div>
     </header>
   );
 };

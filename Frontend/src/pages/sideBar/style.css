@@ -24,3 +24,16 @@
   font-size: 22px;
 
 }
+.sidebar_h4{
+  position: relative; 
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.sidebar_b{
+  position: relative; 
+  right: 50px;
+  font-size: 20px;
+  
+}
