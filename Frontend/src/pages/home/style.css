@@ -7,3 +7,16 @@
   top: 60px; /* Adjust as needed */
   right: 60px; /* Adjust as needed */
 }
+
+.scrolling_card_div {
+  background-color: yellow;
+  height: 400px;
+  width: 2500px;
+}
+
+
+.scrolling_card_div_link {
+  background-color: aqua;
+  height: 250px;
+  width: 2500px;
+}
